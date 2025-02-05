@@ -1,0 +1,23 @@
+GET http://127.0.0.1:8000/api/events/
+
+###
+GET http://127.0.0.1:8000/api/events/1
+
+###
+POST http://127.0.0.1:8000/api/events/
+Content-Type: application/json
+
+{
+    "name": "Conférence MHWorld",
+    "location": "Coral Highlands",
+    "date": "2026-03-05",
+    "description" : "My man, let's go hunt some Kirin, amiright ?"
+}
+
+###
+PUT http://127.0.0.1:8000/api/events/1/
+Content-Type: application/json
+
+{
+    "description": "NUH UH"
+}
